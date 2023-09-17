@@ -34,9 +34,9 @@ function weather(){
         temperature.innerHTML = `<p>${data.main.temp} &#176C</p>`
         min.innerHTML = `<p>Min: ${data.main.temp_min} &#176C</p>`
         max.innerHTML = `<p>Max: ${data.main.temp_max} &#176C</p>`
-        feel.innerHTML = `<p>Real Feel: ${data.main.feels_like} &#176C</p>`
+        feel.innerHTML = `<p>Feels: ${data.main.feels_like} &#176C</p>`
         humidity.innerHTML = `<p>Humidity: ${data.main.humidity} %</p>`
-        wind.innerHTML = `<p>Wind Speed: ${data.wind.speed} km/h`
+        wind.innerHTML = `<p>Wind: ${data.wind.speed} km/h`
         pressure.innerHTML = `<p>Pressure: ${data.main.pressure} hPa</p>`
 
         if(data.weather[0].main === 'Clouds'){
